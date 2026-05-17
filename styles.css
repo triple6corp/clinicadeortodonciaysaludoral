@@ -953,6 +953,28 @@ footer {
   }
 }
 
+
+  /* ── CORRECCIÓN RESPONSIVE: SECCIÓN ABOUT / QUIÉNES SOMOS ── */
+  .about {
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+  }
+
+  .about__visual {
+    min-height: 250px;
+    padding: 2rem 1rem !important;
+  }
+
+  .about__content {
+    padding: 3rem 1.5rem !important;
+    text-align: center;
+  }
+
+  .about__content .divider {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
 /* 📱 CELULARES PEQUEÑOS: Menos de 480px */
 @media (max-width: 480px) {
   h1, .hero__title {
