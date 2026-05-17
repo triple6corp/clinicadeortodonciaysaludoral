@@ -423,9 +423,11 @@ body {
 }
 
 .about__visual {
-    padding: 0 !important; 
-    min-height: auto !important;
-    display: flex;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 4rem;
 }
 
 .about__logo {
@@ -882,6 +884,11 @@ footer {
   section {
     padding: 4rem 1.5rem !important;
   }
+  
+  /* Corregir padding global para el hero en móviles y tablets para que la imagen sea pantalla completa */
+  .hero {
+    padding: 0 !important;
+  }
 }
 
 /* 📱 CELULARES: Pantallas menores a 768px (iPhone, Samsung, etc.) */
@@ -959,8 +966,18 @@ footer {
   }
 
   .about__visual {
-    min-height: 250px;
-    padding: 2rem 1rem !important;
+    padding: 0 !important;
+    min-height: auto !important;
+    display: flex; /* Mantiene la imagen centrada si es necesario */
+  }
+
+  /* Forzar a que la imagen ocupe el 100% del ancho del celular */
+  .about__visual img {
+    width: 100% !important;
+    max-width: 100% !important; /* Ignora los 500px del HTML */
+    height: auto !important;
+    object-fit: cover;
+    border-radius: 0 !important;
   }
 
   .about__content {
