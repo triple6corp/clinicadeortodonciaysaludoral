@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clínica de Ortodoncia y Salud Oral — Seriedad, Compromiso, Amabilidad y Disponibilidad en Armenia, Quindío.">
+  <title>Clínica de Ortodoncia y Salud Oral</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── NAVIGATION ─────────────────────────────────────────── -->
+  <header>
+    <nav class="nav nav--hero" aria-label="Navegación principal">
+      <a href="#inicio" class="nav__logo" aria-label="Inicio">
+        <img
+        src="web_images/logoazul_2.png"
+          alt="Logo Clínica de Ortodoncia y Salud Oral"
+          class="nav__logo-img"
+          width="56" height="56"
+        >
+        <div class="nav__logo-text">
+          <span class="nav__brand">Clínica de Ortodoncia</span>
+          <span class="nav__sub">y Salud Oral</span>
+        </div>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <a href="#contacto" class="nav__cta">Agendar Cita</a>
+
+      <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <nav class="nav__mobile" aria-label="Menú móvil">
+      <ul role="list">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#contacto" class="nav__cta" style="display:inline-block;margin-top:1rem;">Agendar Cita</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── HERO ───────────────────────────────────────────────── -->
+  <section class="hero" id="inicio" aria-label="Portada">
+    <img
+      class="hero__img"
+      src="web_images/banner_01.png"
+      alt="Consultorio Clínica de Ortodoncia y Salud Oral"
+      loading="eager"
+      decoding="async"
+    >
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Seriedad &middot; Compromiso &middot; Amabilidad &middot; Disponibilidad</p>
+      <h1 class="hero__title">
+        Tu sonrisa,
+        <span>nuestro compromiso.</span>
+      </h1>
+      <p class="hero__desc">
+        Clínica especializada en ortodoncia y salud oral, con un enfoque integral
+        que combina rigor científico y atención humana en cada diagnóstico.
+      </p>
+      <div class="hero__actions">
+        <a href="#contacto" class="btn--primary">Agendar Cita</a>
+        <a href="#servicios" class="btn--ghost">Ver Servicios</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── PILLARS ────────────────────────────────────────────── -->
+  <div class="pillars" role="list" aria-label="Valores de la clínica">
+
+    <div class="pillar reveal" role="listitem">
+      <div class="pillar__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+        </svg>
+      </div>
+      <div>
+        <p class="pillar__name">Seriedad</p>
+        <p class="pillar__desc">Rigor científico en cada diagnóstico</p>
+      </div>
+    </div>
+
+    <div class="pillar reveal reveal--delay-1" role="listitem">
+      <div class="pillar__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+        </svg>
+      </div>
+      <div>
+        <p class="pillar__name">Compromiso</p>
+        <p class="pillar__desc">Enfoque total en la recuperación del paciente</p>
+      </div>
+    </div>
+
+    <div class="pillar reveal reveal--delay-2" role="listitem">
+      <div class="pillar__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>
+        </svg>
+      </div>
+      <div>
+        <p class="pillar__name">Amabilidad</p>
+        <p class="pillar__desc">Entorno acogedor que reduce la ansiedad dental</p>
+      </div>
+    </div>
+
+    <div class="pillar reveal reveal--delay-3" role="listitem">
+      <div class="pillar__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <rect x="3" y="4" width="18" height="18" rx="2"/>
+          <line x1="16" y1="2" x2="16" y2="6"/>
+          <line x1="8" y1="2" x2="8" y2="6"/>
+          <line x1="3" y1="10" x2="21" y2="10"/>
+        </svg>
+      </div>
+      <div>
+        <p class="pillar__name">Disponibilidad</p>
+        <p class="pillar__desc">Atención ágil y agendamiento sin fricciones</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── ABOUT ──────────────────────────────────────────────── -->
+  <section class="about" id="nosotros" aria-label="Quiénes somos">
+    <div class="about__visual">
+      <img
+      src="web_images/banner_02.png" style="width: 100%; max-width: 500px; height: auto; object-fit: cover;"
+        alt= "Clínica de Ortodoncia y Salud Oral "
+        class="about__logo reveal"
+        loading="lazy"
+        
+      >
+    </div>
+    <div class="about__content">
+      <p class="section-label reveal">Quiénes Somos</p>
+      <div class="divider reveal reveal--delay-1"></div>
+      <h2 class="section-title reveal reveal--delay-1">Salud oral con propósito humano</h2>
+      <p class="section-body reveal reveal--delay-2">
+        Somos una clínica especializada en ortodoncia y salud oral, comprometida con
+        ofrecer tratamientos de alta precisión en un entorno cálido y de confianza.
+      </p>
+      <p class="section-body reveal reveal--delay-2">
+        Cada paciente merece atención personalizada, rigurosa y empática. Esa convicción
+        guía cada uno de nuestros procedimientos, desde el diagnóstico inicial hasta
+        el seguimiento final.
+      </p>
+      <a href="#contacto" class="btn--dark reveal reveal--delay-3">Conocer más</a>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ───────────────────────────────────────────── -->
+  <section class="services" id="servicios" aria-label="Servicios">
+    <div class="services__header">
+      <p class="section-label reveal">Nuestros Servicios</p>
+      <h2 class="services__title reveal reveal--delay-1">Tratamientos especializados</h2>
+    </div>
+
+    <div class="services__grid">
+      <article class="service-card reveal">
+        <div class="service-card__num">01</div>
+        <p class="service-card__name">Ortodoncia</p>
+        <p class="service-card__desc">Brackets metálicos, estéticos y alineadores para una sonrisa perfectamente alineada.</p>
+      </article>
+      <article class="service-card reveal reveal--delay-1">
+        <div class="service-card__num">02</div>
+        <p class="service-card__name">Ortodoncia Invisible</p>
+        <p class="service-card__desc">Alineadores removibles que corrigen la posición dental de forma discreta y cómoda.</p>
+      </article>
+      <article class="service-card reveal reveal--delay-2">
+        <div class="service-card__num">03</div>
+        <p class="service-card__name">Salud Oral Integral</p>
+        <p class="service-card__desc">Evaluación, prevención y tratamiento de enfermedades periodontales con enfoque preventivo.</p>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-card__num">04</div>
+        <p class="service-card__name">Blanqueamiento Dental</p>
+        <p class="service-card__desc">Procedimientos clínicos y en casa para recuperar el brillo natural de tus dientes.</p>
+      </article>
+      <article class="service-card reveal reveal--delay-1">
+        <div class="service-card__num">05</div>
+        <p class="service-card__name">Radiología Digital</p>
+        <p class="service-card__desc">Diagnóstico preciso con imagen de alta resolución y mínima radiación.</p>
+      </article>
+      <article class="service-card reveal reveal--delay-2">
+        <div class="service-card__num">06</div>
+        <p class="service-card__name">Ortopedia Maxilar</p>
+        <p class="service-card__desc">Corrección de la estructura ósea en niños y adolescentes para un desarrollo saludable.</p>
+      </article>
+    </div>
+  </section>
+
+
+ 
+
+  <section id="casos" class="reveal" style="background-color: var(--white); padding: 5rem 1.5rem;">
+  <div style="max-width: 800px; margin: 0 auto; text-align: center; margin-bottom: 3rem;">
+    <h2 style="font-family: 'Cormorant Garamond', serif; color: var(--blue-royal); font-size: 2.8rem; font-weight: 500; margin-bottom: 0.5rem;">
+      Resultados Reales
+    </h2>
+    <p style="color: var(--text-mid); font-size: 1rem; max-width: 500px; margin: 0 auto;">
+      Transformaciones diseñadas con rigor científico y un enfoque humano en nuestra clínica.
+
+    </p>
+  </div>
+
+  <div class="comparison-container" style="max-width: 650px; margin: 0 auto; position: relative; width: 100%; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(216, 210, 202, 0.5); border: 1px solid var(--taupe); -webkit-user-select: none; user-select: none;">
+    
+    <img src="web_images/despues.png" alt="Sonrisa Después" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+    <div class="comparison-before" style="position: absolute; top: 0; left: 0; width: 50%; height: 100%; overflow: hidden;">
+      <img src="web_images/antes.png" alt="Sonrisa Antes" style="width: 100%; height: 100%; object-fit: cover; display: block; max-width: none;">
+    </div>
+
+    <input type="range" min="0" max="100" value="50" class="comparison-slider" aria-label="Deslizador de antes y después" style="position: absolute; top: 0; bottom: 0; left: 0; width: 100%; height: 100%; background: transparent; -webkit-appearance: none; appearance: none; cursor: ew-resize; margin: 0;">
+    
+    <div class="comparison-line" style="position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background: #FFFFFF; pointer-events: none; transform: translateX(-50%);">
+      <div class="comparison-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40px; height: 40px; background: #FFFFFF; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; color: var(--blue-royal); font-weight: bold; font-size: 14px;">↔</div>
+    </div>
+
+    <span style="position: absolute; bottom: 15px; left: 15px; background: rgba(26, 60, 125, 0.75); color: #FFFFFF; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 500; pointer-events: none;">Antes</span>
+    <span style="position: absolute; bottom: 15px; right: 15px; background: rgba(51, 204, 204, 0.85); color: #FFFFFF; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 500; pointer-events: none;">Después</span>
+  </div>
+</section>
+
+  <!-- ── CTA BANNER ─────────────────────────────────────────── -->
+  <section class="cta-banner" id="contacto" aria-label="Llamado a la acción">
+    <p class="cta-banner__text reveal">
+      Tu sonrisa es nuestra <em>mayor responsabilidad</em>.
+      Agenda tu valoración hoy.
+    </p>
+    <section id="contacto" class="contacto-section" style="background-color: var(--cream, #EDE8E1); padding: 5rem 2rem;">
+  <div class="contacto-container" style="max-width: 600px; margin: 0 auto;">
+    <h2 style="color: var(--blue-royal, #1A3C7D); text-align: center; margin-bottom: 2rem;">Agendar cita</h2>
+    
+    <form id="whatsapp-form" class="form-container" style="display: flex; flex-direction: column; gap: 1.2rem;">
+      <div>
+        <label for="form-name" style="display:block; margin-bottom:0.5rem; font-weight:500;">Nombre Completo:</label>
+        <input type="text" id="form-name" required style="width:100%; padding:0.8rem; border:1px solid var(--taupe, #D8D2CA); border-radius:8px; background:#F7F5F2;" placeholder="Ej. Felipe Ríos">
+      </div>
+
+      <div>
+        <label for="form-servicio" style="display:block; margin-bottom:0.5rem; font-weight:500;">Servicio de Interés:</label>
+        <select id="form-servicio" required style="width:100%; padding:0.8rem; border:1px solid var(--taupe, #D8D2CA); border-radius:8px; background:#F7F5F2;">
+          <option value="" disabled selected>Selecciona un servicio</option>
+          <option value="Valoración Integral">Valoración Integral</option>
+          <option value="Limpieza Dental">Limpieza Dental Profesional</option>
+          <option value="Ortodoncia">Ortodoncia Especializada</option>
+          <option value="Cirugía de Cordales">Cirugía de Cordales</option>
+          <option value="Blanqueamiento">Blanqueamiento Dental</option>
+          <option value="Prótesis y Coronas">Prótesis y Coronas</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="form-msg" style="display:block; margin-bottom:0.5rem; font-weight:500;">Mensaje Adicional (Opcional):</label>
+        <textarea id="form-msg" rows="3" style="width:100%; padding:0.8rem; border:1px solid var(--taupe, #D8D2CA); border-radius:8px; background:#F7F5F2;" placeholder="Cuéntanos tus dudas o disponibilidad de horario..."></textarea>
+      </div>
+
+      <button type="submit" style="background-color: #33CCCC; color: white; border: none; padding: 1rem; border-radius: 8px; font-weight: bold; cursor: pointer; transition: all 0.3s ease; display: flex; items-center; justify-content: center; gap: 10px;">
+        Enviar Solicitud a WhatsApp
+      </button>
+    </form>
+  </div>
+</section>
+    </a>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer__top">
+      <div>
+        <p class="footer__brand">Clínica de Ortodoncia</p>
+        <p class="footer__sub">y Salud Oral</p>
+        <p class="footer__desc">
+          Seriedad, Compromiso, Amabilidad y Disponibilidad en cada cita.
+          Tu bienestar dental es nuestra prioridad.
+        </p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__col-title">Servicios</p>
+        <ul>
+          <li><a href="#servicios">Ortodoncia</a></li>
+          <li><a href="#servicios">Ortodoncia Invisible</a></li>
+          <li><a href="#servicios">Salud Oral Integral</a></li>
+          <li><a href="#servicios">Blanqueamiento Dental</a></li>
+          <li><a href="#servicios">Radiología Digital</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <p class="footer__col-title">Contacto</p>
+        <ul>
+          <li><a href="#">Armenia, Quindío</a></li>
+          <li><a href="tel:+573217553697">+57 321 755 3697</a></li>
+          <li><a href="mailto:clinicaortodonciaysaludoral@gmail.com">clinicaortodonciaysaludoral@gmail.com</a></li>
+          <li><a href="#">Lun&ndash;Vie: 8am &ndash; 12pm</a></li>
+          <li><a href="#">2pm &ndash; 6pm</a></li>
+          <li><a href="#">Sáb: 8am &ndash; 12pm</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 Clínica de Ortodoncia y Salud Oral. Todos los derechos reservados.</p>
+      <p class="footer__copy">Seriedad &middot; Compromiso &middot; Amabilidad &middot; Disponibilidad</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
