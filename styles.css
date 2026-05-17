@@ -431,9 +431,10 @@ body {
 }
 
 .about__logo {
-  width: 500px;
-  height: 500px;
-  object-fit: contain;
+  width:100%;
+  width: 100% !important;
+    max-width: 100% !important; /* Fuerza a la imagen a no salirse del celular */
+    height: auto !important;
 }
 
 .about__content {
