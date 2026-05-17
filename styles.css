@@ -423,11 +423,9 @@ body {
 }
 
 .about__visual {
-  background: var(--cream);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem 4rem;
+    padding: 0 !important; 
+    min-height: auto !important;
+    display: flex;
 }
 
 .about__logo {
