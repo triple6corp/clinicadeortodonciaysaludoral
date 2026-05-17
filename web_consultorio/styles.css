@@ -431,9 +431,10 @@ body {
 }
 
 .about__logo {
-  width: 500px;
-  height: 500px;
-  object-fit: contain;
+  width:100%;
+  width: 100% !important;
+    max-width: 100% !important; /* Fuerza a la imagen a no salirse del celular */
+    height: auto !important;
 }
 
 .about__content {
@@ -722,7 +723,7 @@ footer {
 .reveal--delay-4 { transition-delay: 0.4s; }
 
 /* ── RESPONSIVE ───────────────────────────────────────────────── */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .nav { padding: 1rem 2rem; }
   .nav--scrolled { padding: 0.75rem 2rem; }
   .about__content { padding: 4rem 3rem; }
@@ -859,5 +860,106 @@ footer {
   }
   .comparison-before img {
     width: 100vw;
+  }
+}
+
+/* ==========================================================================
+   MECANISMO RESPONSIVE AUTOMÁTICO (TABLETS Y MÓVILES)
+   ========================================================================== */
+
+/* 📱 TABLETS: Pantallas menores a 1024px (iPad, tablets Android) */
+@media (max-width: 1024px) {
+  /* Forzar que el grid de servicios baje de 3 columnas a 2 columnas */
+  .servicios__grid, .services-grid, .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Ajustar los márgenes y tamaños de fuente globales para que no se desborden */
+  h1, .hero__title {
+    font-size: 3rem !important;
+    line-height: 1.15;
+  }
+  
+  section {
+    padding: 4rem 1.5rem !important;
+  }
+}
+
+/* 📱 CELULARES: Pantallas menores a 768px (iPhone, Samsung, etc.) */
+@media (max-width: 768px) {
+  /* Ocultar el menú de escritorio clásico */
+  .nav__links {
+    display: none !important;
+  }
+
+  /* Hacer que el botón de agendar del menú superior se oculte en barra si es muy pequeña */
+  .nav .nav__cta {
+    display: none; /* Se oculta arriba y se muestra dentro del menú móvil */
+  }
+
+  /* Activar el botón de hamburguesa para que sea visible y clickeable */
+  .nav__burger {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 210;
+  }
+
+  /* El bloque principal (Hero) pasa de estar de lado a lado, a ponerse en una sola columna */
+  .hero .container, .hero-container {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    padding-top: 6rem;
+  }
+
+  .hero__actions {
+    justify-content: center !important;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .hero__actions a, .hero__actions button {
+    width: 100% !important; /* Los botones ocupan todo el ancho del celular para mejor clic táctil */
+    text-align: center;
+  }
+
+  /* 🦷 Servicios en 1 sola columna para celulares */
+  .servicios__grid, .services-grid, .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* 📸 El contenedor de Antes y Después se adapta al ancho de la pantalla táctil */
+  .comparison-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    aspect-ratio: 4 / 3 !important;
+  }
+  
+  .comparison-before img {
+    width: 90vw !important; /* Evita que la imagen interna se desfase */
+  }
+
+  /* 📩 Ajustes del formulario de contacto en WhatsApp */
+  .contacto-container {
+    padding: 1.5rem !important;
+    margin: 0 10px;
+  }
+}
+
+/* 📱 CELULARES PEQUEÑOS: Menos de 480px */
+@media (max-width: 480px) {
+  h1, .hero__title {
+    font-size: 2.3rem !important;
+  }
+  
+  h2 {
+    font-size: 1.8rem !important;
   }
 }
