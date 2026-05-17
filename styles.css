@@ -722,7 +722,7 @@ footer {
 .reveal--delay-4 { transition-delay: 0.4s; }
 
 /* ── RESPONSIVE ───────────────────────────────────────────────── */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .nav { padding: 1rem 2rem; }
   .nav--scrolled { padding: 0.75rem 2rem; }
   .about__content { padding: 4rem 3rem; }
