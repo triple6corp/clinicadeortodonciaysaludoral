@@ -69,9 +69,10 @@ body {
 }
 
 .nav__logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.15;
+  background: rgba(29, 79, 150, 0.15); /* Un sutil toque del azul de tu marca */
+  padding: 6px 12px;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); /* Línea interna casi invisible */
 }
 
 .nav__brand {
@@ -93,13 +94,15 @@ body {
 }
 
 .nav--hero .nav__brand {
-  color: var(--cream);
+  color: var(--white); /* Cambiado a blanco sólido para más fuerza */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); /* Sombra sólida que garantiza legibilidad */
 }
 
 .nav--hero .nav__sub {
-  color: rgba(255,255,255,0.55);
+  color: #ffffff; /* Blanco sólido en lugar de semi-transparente */
+  opacity: 0.9;   /* Opacidad alta controlada */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
-
 .nav__links {
   display: flex;
   gap: 2.75rem;
@@ -227,7 +230,14 @@ body {
   left: 4rem;
   transform: translateY(-50%);
   max-width: 560px;
+
+  background: rgba(29, 79, 150, 0.45); /* Base del color azul de la clínica */
+  padding: 2.5rem;
+  border-radius: 4px; /* Opcional: bordes ligeramente suavizados */
+  backdrop-filter: blur(8px); /* Desenfoque sutil para aislar el fondo de la imagen */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* Dimensión */
 }
+
 
 .hero__eyebrow {
   font-size: 10px;
@@ -431,10 +441,9 @@ body {
 }
 
 .about__logo {
-  width:100%;
-  width: 100% !important;
-    max-width: 100% !important; /* Fuerza a la imagen a no salirse del celular */
-    height: auto !important;
+  width: 100% ;
+    max-width: 100%; /* Fuerza a la imagen a no salirse del celular */
+    height: 500px;
 }
 
 .about__content {
@@ -966,19 +975,23 @@ footer {
   }
 
   .about__visual {
-    padding: 0 !important;
-    min-height: auto !important;
-    display: flex; /* Mantiene la imagen centrada si es necesario */
-  }
+  background: var(--cream); /* Color de fondo que servirá como un segundo marco sutil */
+  padding: 2rem;            /* Espacio entre el borde exterior y la foto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;        /* Mantiene una buena altura en pantallas grandes */
+}
 
-  /* Forzar a que la imagen ocupe el 100% del ancho del celular */
-  .about__visual img {
-    width: 100% !important;
-    max-width: 100% !important; /* Ignora los 500px del HTML */
-    height: auto !important;
-    object-fit: cover;
-    border-radius: 0 !important;
-  }
+ .about__visual img {
+  width: 100%;
+  max-width: 480px;         /* Evita que la imagen se estire y ocupe toda la pantalla */
+  height: auto;
+  object-fit: cover;
+  border: 8px solid var(--white); /* El marco sólido alrededor de la foto */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* Sombra suave para despegarla del fondo */
+  border-radius: 4px;       /* Suaviza ligeramente las esquinas del marco */
+}
 
   .about__content {
     padding: 3rem 1.5rem !important;
